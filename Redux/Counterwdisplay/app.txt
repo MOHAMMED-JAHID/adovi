@@ -1,0 +1,18 @@
+import React from 'react';
+import { Provider } from 'react-redux';
+import Counter from './Counter';
+import ValueManager from './ValueManager';
+import store from './store';
+
+function App() {
+  return (
+    <Provider store={store}>
+      <div className="App">
+        <Counter />
+        <ValueManager />
+      </div>
+    </Provider>
+  );
+}
+
+export default App;
