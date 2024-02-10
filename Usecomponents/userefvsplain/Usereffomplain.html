@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Plain JavaScript -->
+    <div>
+      <input id="input" type="text" />
+      <button onclick="focusInput()">Focus Input</button>
+      <p id="isFocused">Is Input Focused: No</p>
+    </div>
+
+    <script>
+      function focusInput() {
+        document.getElementById("input").focus();
+        document.getElementById("isFocused").textContent =
+          "Is Input Focused: Yes";
+      }
+    </script>
+  </body>
+</html>

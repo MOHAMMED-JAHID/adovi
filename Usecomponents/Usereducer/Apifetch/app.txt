@@ -1,0 +1,6 @@
+const App = () => {
+  const apiUrl = "https://api.example.com/data";
+  return <DataFetchingComponent url={apiUrl} />;
+};
+
+export default App;

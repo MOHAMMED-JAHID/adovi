@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Plain JavaScript -->
+    <div id="element">
+      <p id="width">Width: 0px</p>
+      <p id="height">Height: 0px</p>
+    </div>
+
+    <script>
+      const div = document.getElementById("element");
+      const width = div.offsetWidth;
+      const height = div.offsetHeight;
+      document.getElementById("width").textContent = `Width: ${width}px`;
+      document.getElementById("height").textContent = `Height: ${height}px`;
+    </script>
+  </body>
+</html>
